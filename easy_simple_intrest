@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+class prog{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter numbers  ");
+
+        System.out.println("Enter principle amount ");
+        int p=sc.nextInt();
+        System.out.println("Enter no of years ");
+        int t=sc.nextInt();
+        System.out.println("Enter scenior citizen ship ");
+        char s=sc.next().charAt(0);
+
+        double amt=0.0;
+        if (s=='y')
+        amt=(p*t*0.12);
+        else 
+        amt=(p*t*0.10);
+
+        System.out.println("Simple intrest is "+amt);
+
+
+        
+    }
+}
